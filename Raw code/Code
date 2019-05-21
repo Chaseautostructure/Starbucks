@@ -1,0 +1,27 @@
+// project1CPSC300.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//Chase Williams
+//Project 1A
+
+#include "pch.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int numb_One, numb_Two, product, Ans;
+
+	cout << "1st number: ";
+	cin >> numb_One;
+	cout << "2nd number: ";
+	cin >> numb_Two;
+	cout << "What is " << numb_One << " times " << numb_Two << "? ";
+	cin >> Ans;
+
+	product = numb_One * numb_Two;
+
+	if (Ans == product)
+		cout << "Correct!";
+	else
+		cout << "Incorrect. The correct answer is " << product;
+
+	return 0;
